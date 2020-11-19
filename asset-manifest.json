@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/vote-map-app/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/vote-map-app/static/js/main.b41227bb.chunk.js",
+    "main.js.map": "/vote-map-app/static/js/main.b41227bb.chunk.js.map",
+    "runtime-main.js": "/vote-map-app/static/js/runtime-main.a3fb2efb.js",
+    "runtime-main.js.map": "/vote-map-app/static/js/runtime-main.a3fb2efb.js.map",
+    "static/js/2.f16b73c2.chunk.js": "/vote-map-app/static/js/2.f16b73c2.chunk.js",
+    "static/js/2.f16b73c2.chunk.js.map": "/vote-map-app/static/js/2.f16b73c2.chunk.js.map",
+    "static/js/3.7879ac67.chunk.js": "/vote-map-app/static/js/3.7879ac67.chunk.js",
+    "static/js/3.7879ac67.chunk.js.map": "/vote-map-app/static/js/3.7879ac67.chunk.js.map",
+    "index.html": "/vote-map-app/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/vote-map-app/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.f16b73c2.chunk.js.LICENSE.txt": "/vote-map-app/static/js/2.f16b73c2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3fb2efb.js",
+    "static/js/2.f16b73c2.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.b41227bb.chunk.js"
+  ]
+}
