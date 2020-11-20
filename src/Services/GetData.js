@@ -3,10 +3,10 @@ import Axios from 'axios'
 const remoteServerUrl = 'https://vote-map-server.herokuapp.com'
 const testServerUrl = 'http://localhost:4000'
 
-const voteApi = testServerUrl + '/api'
-const getApi = testServerUrl +'/getmaps'
-const clearApi = testServerUrl + '/clearmaps'
-const changeMapApi = testServerUrl + '/changemap'
+const voteApi = remoteServerUrl + '/api'
+const getApi = remoteServerUrl +'/getmaps'
+const clearApi = remoteServerUrl + '/clearmaps'
+const changeMapApi = remoteServerUrl + '/changemap'
 
 const newMapVote = (newVote) => {
   return Axios.post(voteApi, newVote)
