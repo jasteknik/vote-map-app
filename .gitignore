@@ -11,6 +11,8 @@
 # production
 /build
 
+/votemap.github.io
+
 # misc
 .DS_Store
 .env.local

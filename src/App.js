@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useRef} from 'react';
-import InputButton from './Components/inputButton'
 import InputForm from './Components/InputForm'
 import DisplayMaps from './Components/displayMaps'
 
@@ -73,6 +72,28 @@ function App() {
       
   }
 
+  //Change map handle
+  const handleChangeMap = (event, aMapName) => {
+    event.preventDefault()
+    
+    if (aMapName === 'voted'){
+      const data = {
+        mapName: aMapName,
+        exec: 0
+      }
+      GetData
+      .changeMap(data)
+    }
+    else {
+      const data = {
+        mapName: aMapName,
+        exec: 1
+      }
+      GetData
+      .changeMap(data)
+    }
+  }
+
   //Update function for map votes
   function update() {
     const data = {
@@ -89,6 +110,8 @@ function App() {
         }
       )
   }
+
+  
 
   
 
@@ -109,6 +132,12 @@ function App() {
 
       <DisplayMaps maps={maps} />
 
+      <div>
+        <button onClick={(event) => handleChangeMap(event, "de_nuke")}>CHANGE</button>
+      </div>
+      <div>
+        <button onClick={(event) => handleChangeMap(event, "voted")}>CHANGE TO VOTED MAP</button>
+      </div>
     </div>
   );
 }

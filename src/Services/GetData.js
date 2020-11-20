@@ -1,13 +1,12 @@
 import Axios from 'axios'
 
-const voteApi = 'https://vote-map-server.herokuapp.com/api'
-const getApi = 'https://vote-map-server.herokuapp.com/getmaps'
-const clearApi = 'https://vote-map-server.herokuapp.com/clearmaps'
+const remoteServerUrl = 'https://vote-map-server.herokuapp.com'
+const testServerUrl = 'http://localhost:4000'
 
-const httpUrl = 'https://'
-const USERNAME = 'jasteknik'
-const PASSWORD = 'RDX680mko123'
-const url1 ='@opensky-network.org/api/flights/'
+const voteApi = testServerUrl + '/api'
+const getApi = testServerUrl +'/getmaps'
+const clearApi = testServerUrl + '/clearmaps'
+const changeMapApi = testServerUrl + '/changemap'
 
 const newMapVote = (newVote) => {
   return Axios.post(voteApi, newVote)
@@ -21,7 +20,12 @@ const clear = () => {
   return Axios.post(clearApi, [])
 }
 
+const changeMap = (mapObject) => {
+  return Axios.post(changeMapApi, mapObject)
+}
+
 export default { 
   newMapVote: newMapVote,
   update: update,
-  clear: clear }
+  clear: clear,
+  changeMap: changeMap }
